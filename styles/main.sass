@@ -1,2 +1,40 @@
+$tr-height: 30px
+$tbody-height: 4 * $tr-height
+
+*
+  margin: 0
+  padding: 0
+
 h1
   color: gray
+
+#app
+  display: flex
+  flex-direction: column
+  width: 100vw
+  height: 100vh
+  background: yellow
+  justify-content: center
+  align-items: center
+table
+  flex-basis: 0
+  display: inline-block
+  background: red
+  min-width: 600px
+  width: 60%
+thead
+  height: $tr-height
+  display: table
+  table-layout: fixed
+  text-align: left
+
+tbody
+  display: block
+  background: gray
+  height: $tbody-height
+  overflow: auto
+thead, tbody tr
+  display: table
+  height: $tr-height
+  width: 100%
+  table-layout: fixed

@@ -1,27 +1,8 @@
 var app = new Vue({
   el: '#app',
   data: {
-    pubs: [
-      {
-        name: 'testname',
-        category: 'testcat',
-        address: 'testadd',
-        distance: 'testdist'
-      },
-      {
-        name: 'testname2',
-        category: 'testcat2',
-        address: 'testadd2',
-        distance: 'testdist2'
-      },
-      {
-        name: 'testname2',
-        category: 'testcat2',
-        address: 'testadd2',
-        distance: 'testdist2'
-      }
-
-    ]
+    categories: ['name','category','address','distance'],
+    pubs: []
   }
 });
 
@@ -29,7 +10,13 @@ fetch('https://api.foursquare.com/v2/venues/search?&categoryId=4d4b7105d754a0637
 .then(function(response) {
   response.json().then(function(data){
     data.response.venues.map((venue) => {
-      console.log(venue.name)
+      app._data.pubs.push({
+        name: venue.name,
+        category: venue.categories[0].shortName,
+        address: venue.location.address,
+        distance: venue.location.distance,
+      });
+      console.log(app._data.pubs);
     });
 
   });

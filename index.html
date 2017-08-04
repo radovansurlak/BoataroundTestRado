@@ -11,6 +11,7 @@
 <body>
   <div id="app">
     <table>
+
      <thead>
       <tr>
          <th>Name</th>
@@ -19,15 +20,13 @@
          <th>Distance</th>
       </tr>
      </thead>
+
      <tbody>
       <tr v-for="pub in pubs">
-         <td>{{ pub.name}}</td>
-         <td>{{ pub.category}}</td>
-         <td>{{ pub.category}}</td>
-         <td>{{ pub.distance}}</td>
+        <td v-for="attribute in pub"> {{attribute}} </td>
       </tr>
-
      </tbody>
+
     </table>
   </div>
 
