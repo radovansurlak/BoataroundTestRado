@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Boataround Test - Rado</title>
-  <link rel="stylesheet" href="/styles/main.css">
+  <link rel="stylesheet" href="styles/main.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.2/vue.js"></script>
 </head>
 
@@ -20,9 +20,7 @@
       <div class='icon' v-for="venueType in venueTypes"  v-on:mouseover = "changeTitle(venueType)" v-on:mouseleave = 'changeTitle("Let&#39s go out :)")'  v-bind:id="venueType" v-on:click="changeCategory(venueType)"></div>
     </aside>
 
-
     <table>
-
      <thead>
       <tr>
          <th v-for="category in categories"> {{ category }} </th>
@@ -34,7 +32,6 @@
         <td v-for="attribute in pub"> {{attribute}} </td>
       </tr>
      </tbody>
-
     </table>
   </div>
 
