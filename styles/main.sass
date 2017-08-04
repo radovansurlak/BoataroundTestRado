@@ -1,10 +1,10 @@
 
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro')
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600')
 
 
 
 $main-font: "Source Sans Pro", sans-serif
-$tr-height: 40px
+$tr-height: 45px
 $tbody-height: 4 * $tr-height
 
 *
@@ -15,6 +15,9 @@ $tbody-height: 4 * $tr-height
 h1
   color: gray
 
+aside
+  display: flex
+  margin-bottom: 50px
 #app
   background-image: url(../media/bg.jpg)
   background-size: cover
@@ -39,9 +42,10 @@ thead
   display: table
   table-layout: auto
   text-align: center
+  border-bottom: 1px solid rgba(0,0,0,0.1)
 th
   height: 50px
-  font-weight: 300
+  font-weight: 600
   font-size: 20px
   box-sizing: border-box
   text-transform: capitalize
@@ -63,3 +67,19 @@ thead, tbody tr
   height: $tr-height
   width: 100%
   table-layout: fixed
+
+.icon
+  margin: 2vw
+  width: 50px
+  height: 50px
+  background-size: contain
+  transition: all 250ms
+  cursor: pointer
+  &:hover
+    transform: scale(1.5)
+#bar.icon
+  background-image: url(../media/icons/bar.png)
+#café.icon
+  background-image: url(../media/icons/cafe.png)
+#restaurant.icon
+  background-image: url(../media/icons/restaurant.png)

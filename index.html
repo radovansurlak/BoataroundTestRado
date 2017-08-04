@@ -13,9 +13,7 @@
   <div id="app">
 
     <aside>
-      <button v-on:click="counter += 1">bar</button>
-      <button v-on:click="counter += 1">cafe</button>
-      <button v-on:click="counter += 1">restaurant</button>
+      <div class='icon' v-for="venueType in venueTypes"  v-bind:id="venueType" v-on:click="changeCategory(venueType)"></div>
     </aside>
 
 
