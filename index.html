@@ -1,0 +1,36 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Boataround Test - Rado</title>
+  <link rel="stylesheet" href="/styles/main.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.2/vue.js"></script>
+</head>
+
+<body>
+  <div id="app">
+    <table>
+     <thead>
+      <tr>
+         <th>Name</th>
+         <th>Category</th>
+         <th>Address</th>
+         <th>Distance</th>
+      </tr>
+     </thead>
+     <tbody>
+      <tr v-for="pub in pubs">
+         <td>{{ pub.name}}</td>
+         <td>{{ pub.category}}</td>
+         <td>{{ pub.category}}</td>
+         <td>{{ pub.distance}}</td>
+      </tr>
+
+     </tbody>
+    </table>
+  </div>
+
+</body>
+<script src="js/script.js"></script>
+</html>
