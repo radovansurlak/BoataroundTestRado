@@ -9,15 +9,13 @@
 </head>
 
 <body>
+
   <div id="app">
     <table>
 
      <thead>
       <tr>
-         <th>Name</th>
-         <th>Category</th>
-         <th>Address</th>
-         <th>Distance</th>
+         <th v-for="category in categories"> {{ category }} </th>
       </tr>
      </thead>
 

@@ -1,41 +1,63 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300");
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  -webkit-font-smoothing: antialiased; }
 
 h1 {
   color: gray; }
 
 #app {
+  background-image: url(../media/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: Roboto, sans-serif;
   display: flex;
   flex-direction: column;
   width: 100vw;
   height: 100vh;
-  background: yellow;
   justify-content: center;
   align-items: center; }
 
 table {
+  padding: 2px;
   flex-basis: 0;
   display: inline-block;
-  background: red;
-  min-width: 600px;
-  width: 60%; }
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 5px;
+  box-shadow: 0 10px 50px 0px rgba(0, 0, 0, 0.1);
+  width: 60%;
+  min-width: 500px; }
 
 thead {
-  height: 30px;
   display: table;
-  table-layout: fixed;
-  text-align: left; }
+  table-layout: auto;
+  text-align: center; }
+
+th {
+  height: 50px;
+  font-weight: 300;
+  font-size: 20px;
+  box-sizing: border-box;
+  text-transform: capitalize; }
 
 tbody {
   display: block;
-  background: gray;
-  height: 120px;
+  background: white;
+  height: 160px;
   overflow: auto; }
+  tbody tr {
+    font-size: 15px;
+    padding: 0 5px;
+    text-align: center;
+    height: 40px;
+    text-transform: capitalize;
+    box-sizing: border-box;
+    border: 0.1px solid rgba(0, 0, 0, 0.07); }
 
 thead, tbody tr {
   display: table;
-  height: 30px;
+  height: 40px;
   width: 100%;
   table-layout: fixed; }
 
