@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600')
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600')
 
 
 
@@ -12,10 +12,13 @@ $tbody-height: 4 * $tr-height
   padding: 0
   -webkit-font-smoothing: antialiased
 
-h1
-  color: gray
+#title
 
+  text-align: center
+  margin-bottom: 10px
 aside
+  background: rgba(255,255,255,0.7)
+  border-radius: 15px
   display: flex
   margin-bottom: 50px
 #app
@@ -55,6 +58,8 @@ tbody
   height: $tbody-height
   overflow: auto
   & tr
+    &:nth-child(even)
+      background: rgba(0,0,0,0.1)
     font-size: 15px
     padding: 0 5px
     text-align: center

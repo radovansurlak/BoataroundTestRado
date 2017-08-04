@@ -1,3 +1,7 @@
+String.prototype.capitalize = function() {
+    return this.charAt(0).toUpperCase() + this.slice(1);
+}
+
 var app = new Vue({
   el: '#app',
   data: {
@@ -21,6 +25,9 @@ var app = new Vue({
           getData('4d4b7105d754a06374d81259')
           break;
       }
+    },
+    changeTitle: function(venueType){
+      document.getElementById("title").innerHTML = venueType.capitalize()
     }
   }
 });

@@ -12,8 +12,12 @@
 
   <div id="app">
 
+    <header>
+      <h1 id="title">Let's go out :)</h1>
+    </header>
+
     <aside>
-      <div class='icon' v-for="venueType in venueTypes"  v-bind:id="venueType" v-on:click="changeCategory(venueType)"></div>
+      <div class='icon' v-for="venueType in venueTypes"  v-on:mouseover = "changeTitle(venueType)" v-on:mouseleave = 'changeTitle("Let&#39s go out :)")'  v-bind:id="venueType" v-on:click="changeCategory(venueType)"></div>
     </aside>
 
 
