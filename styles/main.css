@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:300");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +11,7 @@ h1 {
   background-image: url(../media/bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  font-family: Roboto, sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   display: flex;
   flex-direction: column;
   width: 100vw;
